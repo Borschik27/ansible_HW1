@@ -1,0 +1,8 @@
+# Используем образ Alpine
+FROM alpine:latest
+
+# Устанавливаем необходимые пакеты
+RUN apk add --no-cache python3 py3-pip
+
+# Устанавливаем задержку в 1000 секунд
+CMD ["sh", "-c", "sleep 1000"]
